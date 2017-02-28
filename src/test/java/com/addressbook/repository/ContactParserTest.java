@@ -1,9 +1,9 @@
-package com.addressbook;
+package com.addressbook.repository;
 
 import com.addressbook.Contact;
 import com.addressbook.Gender;
 import com.addressbook.RequiredKeywordsMatcher;
-import com.addressbook.ContactParser;
+import com.addressbook.repository.ContactParser;
 import org.assertj.core.api.Assertions;
 import org.junit.Rule;
 import org.junit.Test;
