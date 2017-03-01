@@ -21,7 +21,6 @@ public class ContactParserTest {
     public void emptyLine_throwException() throws Exception {
         //expect
         thrown.expect(IllegalArgumentException.class);
-        thrown.expectMessage(new RequiredKeywordsMatcher("Expected 3 parts"));
 
         //given
         ContactParser underTest = new ContactParser();
@@ -33,7 +32,7 @@ public class ContactParserTest {
     public void lineHasOnlyFirstAndLastName_throwException() throws Exception {
         //expect
         thrown.expect(IllegalArgumentException.class);
-        thrown.expectMessage(new RequiredKeywordsMatcher("Expected 3 parts", "Bill McKnight"));
+        thrown.expectMessage(new RequiredKeywordsMatcher("format", "Bill McKnight"));
 
         //given
         ContactParser underTest = new ContactParser();

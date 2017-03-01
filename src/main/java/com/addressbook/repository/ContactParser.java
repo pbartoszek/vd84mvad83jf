@@ -19,7 +19,7 @@ public class ContactParser {
     public Contact parseContact(String line){
         String[] parts = line.split(",");
         if(parts.length!=3){
-            throw new IllegalArgumentException("Expected 3 parts in contact[" + line + "]");
+            throw new IllegalArgumentException("Input doesn't conform to expected format. Got [" + line + "]");
         }
         String fullName = parts[0];
 
